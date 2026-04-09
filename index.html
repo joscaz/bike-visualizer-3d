@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bike showcase — Sketchfab</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Bike showcase</h1>
+      <p class="lede">
+        Click the 3D model to identify parts (when the model exposes separate
+        meshes). Educational reference below works for every bike.
+      </p>
+    </header>
+
+    <main class="layout">
+      <section class="panel panel--controls" aria-label="Choose a model">
+        <label for="bike-select">Model</label>
+        <select id="bike-select"></select>
+        <p id="viewer-status" class="status" aria-live="polite">Loading catalog…</p>
+        <p id="viewer-error" class="status status--error" role="alert" hidden></p>
+      </section>
+
+      <section class="panel panel--viewer" aria-label="3D viewer">
+        <div class="iframe-wrap">
+          <iframe
+            src=""
+            id="api-frame"
+            title="Sketchfab 3D viewer"
+            allow="autoplay; fullscreen; xr-spatial-tracking"
+            allowfullscreen
+            mozallowfullscreen="true"
+            webkitallowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <aside class="panel panel--detail" aria-label="Part details">
+        <h2>Selection</h2>
+        <div id="part-detail">
+          <p class="muted">Click a part on the model, or use the reference list.</p>
+        </div>
+
+        <h2 class="detail-heading">Reference — bike anatomy</h2>
+        <p class="muted small">
+          Use this when the model is one mesh or IDs are not mapped yet.
+        </p>
+        <ul id="parts-guide" class="parts-guide"></ul>
+      </aside>
+
+      <section class="panel panel--credits full-width" aria-label="Credits">
+        <h2>Credits</h2>
+        <div id="credits-block"></div>
+        <p class="small muted">
+          3D view embedded via
+          <a href="https://sketchfab.com/developers/viewer" rel="noopener noreferrer">Sketchfab Viewer</a>.
+          Respect each model&rsquo;s license on Sketchfab.
+        </p>
+      </section>
+    </main>
+
+    <script src="https://static.sketchfab.com/api/sketchfab-viewer-1.12.1.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

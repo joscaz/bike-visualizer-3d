@@ -1,0 +1,230 @@
+{
+  "bikes": [
+    {
+      "id": "carbon-frame",
+      "uid": "398999b3360b4e6997a9aae253d6acbd",
+      "title": "Carbon Frame Bike",
+      "author": "prefrontal cortex",
+      "authorProfileUrl": "https://sketchfab.com/prefrontalcortex",
+      "modelUrl": "https://sketchfab.com/3d-models/carbon-frame-bike-398999b3360b4e6997a9aae253d6acbd",
+      "license": "CC Attribution-ShareAlike 4.0 International",
+      "partsByInstanceId": {},
+      "partsByMaterialId": {},
+      "partsGuide": [
+        {
+          "name": "Frame",
+          "purpose": "Main structure that holds wheels and components; determines fit, stiffness, and ride feel."
+        },
+        {
+          "name": "Fork",
+          "purpose": "Holds the front wheel and steers the bike; on MTBs often a suspension fork for bump absorption."
+        },
+        {
+          "name": "Wheels (rim + spokes + hub)",
+          "purpose": "Roll on tires; hubs contain bearings; drivetrain connects at the rear hub."
+        },
+        {
+          "name": "Tires",
+          "purpose": "Grip and cushion; tread and width suit road, gravel, or trail."
+        },
+        {
+          "name": "Handlebar & stem",
+          "purpose": "Steering control and cockpit position; stem sets reach and height to the bar."
+        },
+        {
+          "name": "Brakes",
+          "purpose": "Slow and stop—disc calipers squeeze rotors or rim brakes contact the wheel rim."
+        },
+        {
+          "name": "Crankset & pedals",
+          "purpose": "Convert leg power into rotation; chainrings define gearing with the cassette."
+        },
+        {
+          "name": "Chain & cassette",
+          "purpose": "Transfers power to the rear wheel; cassette cogs provide gear range."
+        },
+        {
+          "name": "Derailleurs & shifters",
+          "purpose": "Move the chain across chainrings (front) and cassette (rear) for easier or harder gears."
+        },
+        {
+          "name": "Seatpost & saddle",
+          "purpose": "Support rider weight and set saddle height/fore-aft for pedaling comfort."
+        }
+      ]
+    },
+    {
+      "id": "mountain-bike",
+      "uid": "0834fd45dd4041e78a0a19c3bdcc0ec2",
+      "title": "Mountain Bike",
+      "author": "Studio Lab",
+      "authorProfileUrl": "https://sketchfab.com/studiolab.dev",
+      "modelUrl": "https://sketchfab.com/3d-models/mountain-bike-0834fd45dd4041e78a0a19c3bdcc0ec2",
+      "license": "See model page on Sketchfab",
+      "partsByInstanceId": {},
+      "partsByMaterialId": {},
+      "partsGuide": [
+        {
+          "name": "Suspension fork",
+          "purpose": "Absorbs front impacts to maintain traction and control on rough terrain."
+        },
+        {
+          "name": "Rear shock (full-suspension)",
+          "purpose": "Lets the rear wheel track bumps; linkage designs vary by bike category."
+        },
+        {
+          "name": "Dropper post",
+          "purpose": "Lowers saddle on demand for steep descents; raises for efficient climbing."
+        },
+        {
+          "name": "Wide handlebar",
+          "purpose": "More leverage for steering precision and stability at speed off-road."
+        },
+        {
+          "name": "Disc brakes",
+          "purpose": "Consistent stopping in mud and wet; rotors dissipate heat on long descents."
+        },
+        {
+          "name": "Knobby tires",
+          "purpose": "Tread digs into loose surfaces; lower pressures increase grip on trails."
+        },
+        {
+          "name": "1x drivetrain",
+          "purpose": "Single front chainring with wide-range cassette—simple shifting on technical terrain."
+        }
+      ]
+    },
+    {
+      "id": "bike-frame-annotated",
+      "uid": "2fb23a8469aa42a7aaff7fe2e2db4d3b",
+      "title": "Bike Frame (annotated on Sketchfab)",
+      "author": "hutcheson3D",
+      "authorProfileUrl": "https://sketchfab.com/hutcheson3D",
+      "modelUrl": "https://sketchfab.com/3d-models/bike-frame-2fb23a8469aa42a7aaff7fe2e2db4d3b",
+      "license": "See model page on Sketchfab",
+      "partsByInstanceId": {},
+      "partsByMaterialId": {},
+      "partsGuide": [
+        {
+          "name": "Head tube",
+          "purpose": "Houses the steerer; defines stack and houses headset bearings for steering."
+        },
+        {
+          "name": "Top tube / down tube",
+          "purpose": "Connect head tube to seat cluster and bottom bracket; major structural triangle members."
+        },
+        {
+          "name": "Seat tube",
+          "purpose": "Holds the seatpost; angle influences saddle position relative to pedals."
+        },
+        {
+          "name": "Chainstays & seatstays",
+          "purpose": "Rear triangle members connecting bottom bracket and seat cluster to the rear axle."
+        },
+        {
+          "name": "Bottom bracket shell",
+          "purpose": "Interface for crank bearings; width and standard must match your crankset."
+        }
+      ]
+    },
+    {
+      "id": "trek-madone-slr-9-frame",
+      "uid": "56ecf7553d9e4fbb86d5ce985d1ee605",
+      "title": "Trek Madone SLR 9 Disc eTap",
+      "author": "Dav1d-",
+      "authorProfileUrl": "https://sketchfab.com/Dav1d-",
+      "modelUrl": "https://sketchfab.com/3d-models/roadbike-trek-madone-slr-9-disc-etap-56ecf7553d9e4fbb86d5ce985d1ee605",
+      "license": "See model page on Sketchfab",
+      "partsByInstanceId": {},
+      "partsByMaterialId": {},
+      "partsGuide": [
+        {
+          "name": "Head tube",
+          "purpose": "Houses the steerer; defines stack and houses headset bearings for steering."
+        },
+        {
+          "name": "Top tube / down tube",
+          "purpose": "Connect head tube to seat cluster and bottom bracket; major structural triangle members."
+        },
+        {
+          "name": "Seat tube",
+          "purpose": "Holds the seatpost; angle influences saddle position relative to pedals."
+        },
+        {
+          "name": "Chainstays & seatstays",
+          "purpose": "Rear triangle members connecting bottom bracket and seat cluster to the rear axle."
+        },
+        {
+          "name": "Bottom bracket shell",
+          "purpose": "Interface for crank bearings; width and standard must match your crankset."
+        }
+      ]
+    },
+    {
+      "id": "colnago-y1rs-rainbow",
+      "uid": "1d687cfb5f4d4055a400aa7b5214e984",
+      "title": "COLNAGO Y1Rs rainbow Tadej Pogacar edition",
+      "author": "Dav1d-",
+      "authorProfileUrl": "https://sketchfab.com/Dav1d-",
+      "modelUrl": "https://sketchfab.com/3d-models/colnago-y1rs-rainbow-tadej-pogacar-edition-1d687cfb5f4d4055a400aa7b5214e984",
+      "license": "See model page on Sketchfab",
+      "partsByInstanceId": {},
+      "partsByMaterialId": {},
+      "partsGuide": [
+        {
+          "name": "Head tube",
+          "purpose": "Houses the steerer; defines stack and houses headset bearings for steering."
+        },
+        {
+          "name": "Top tube / down tube",
+          "purpose": "Connect head tube to seat cluster and bottom bracket; major structural triangle members."
+        },
+        {
+          "name": "Seat tube",
+          "purpose": "Holds the seatpost; angle influences saddle position relative to pedals."
+        },
+        {
+          "name": "Chainstays & seatstays",
+          "purpose": "Rear triangle members connecting bottom bracket and seat cluster to the rear axle."
+        },
+        {
+          "name": "Bottom bracket shell",
+          "purpose": "Interface for crank bearings; width and standard must match your crankset."
+        }
+      ]
+    },
+    {
+      "id": "scott-plasma-s",
+      "uid": "73b522cfcc75407e9a49c43d55b9d627",
+      "title": "Scott Plasma S",
+      "author": "Dav1d-",
+      "authorProfileUrl": "https://sketchfab.com/Dav1d-",
+      "modelUrl": "https://sketchfab.com/3d-models/scott-plasma-s-73b522cfcc75407e9a49c43d55b9d627",
+      "license": "See model page on Sketchfab",
+      "partsByInstanceId": {},
+      "partsByMaterialId": {},
+      "partsGuide": [
+        {
+          "name": "Head tube",
+          "purpose": "Houses the steerer; defines stack and houses headset bearings for steering."
+        },
+        {
+          "name": "Top tube / down tube",
+          "purpose": "Connect head tube to seat cluster and bottom bracket; major structural triangle members."
+        },
+        {
+          "name": "Seat tube",
+          "purpose": "Holds the seatpost; angle influences saddle position relative to pedals."
+        },
+        {
+          "name": "Chainstays & seatstays",
+          "purpose": "Rear triangle members connecting bottom bracket and seat cluster to the rear axle."
+        },
+        {
+          "name": "Bottom bracket shell",
+          "purpose": "Interface for crank bearings; width and standard must match your crankset."
+        }
+      ]
+    }
+  ]
+}
