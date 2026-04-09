@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bike showcase — Sketchfab</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css?v=3" />
   </head>
   <body>
     <header class="site-header">
@@ -16,26 +16,59 @@
     </header>
 
     <main class="layout">
-      <section class="panel panel--controls" aria-label="Choose a model">
-        <label for="bike-select">Model</label>
-        <select id="bike-select"></select>
-        <p id="viewer-status" class="status" aria-live="polite">Loading catalog…</p>
-        <p id="viewer-error" class="status status--error" role="alert" hidden></p>
-      </section>
+      <div class="controls-column">
+        <section class="panel panel--controls" aria-label="Choose a model">
+          <label for="bike-select">Model</label>
+          <select id="bike-select"></select>
+          <p id="viewer-status" class="status" aria-live="polite">Loading catalog…</p>
+          <p id="viewer-error" class="status status--error" role="alert" hidden></p>
+        </section>
 
-      <section class="panel panel--viewer" aria-label="3D viewer">
-        <div class="iframe-wrap">
-          <iframe
-            src=""
-            id="api-frame"
-            title="Sketchfab 3D viewer"
-            allow="autoplay; fullscreen; xr-spatial-tracking"
-            allowfullscreen
-            mozallowfullscreen="true"
-            webkitallowfullscreen
-          ></iframe>
-        </div>
-      </section>
+        <section class="panel panel--extras" aria-label="Facts and video">
+          <h2>Random facts</h2>
+          <ul id="random-facts" class="random-facts" hidden></ul>
+          <p id="random-facts-empty" class="muted small">
+            Add a <code class="inline-code">randomFacts</code> array in
+            <code class="inline-code">data/bikes.json</code> for this model.
+          </p>
+
+          <h2 class="extras-heading">Video</h2>
+          <div id="youtube-shell" class="youtube-shell" hidden>
+            <div class="youtube-embed">
+              <iframe
+                id="youtube-iframe"
+                src=""
+                title=""
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+              ></iframe>
+            </div>
+          </div>
+          <p id="youtube-empty" class="muted small">
+            Add <code class="inline-code">youtubeUrl</code> or
+            <code class="inline-code">youtubeVideoId</code> in
+            <code class="inline-code">data/bikes.json</code> to embed a clip.
+          </p>
+        </section>
+      </div>
+
+      <div class="viewer-column">
+        <section class="panel panel--viewer" aria-label="3D viewer">
+          <div class="iframe-wrap">
+            <iframe
+              src=""
+              id="api-frame"
+              title="Sketchfab 3D viewer"
+              allow="autoplay; fullscreen; xr-spatial-tracking"
+              allowfullscreen
+              mozallowfullscreen="true"
+              webkitallowfullscreen
+            ></iframe>
+          </div>
+        </section>
+      </div>
 
       <aside class="panel panel--detail" aria-label="Part details">
         <h2>Selection</h2>

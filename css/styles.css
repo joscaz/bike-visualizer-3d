@@ -55,6 +55,24 @@ body {
   grid-template-columns: 1fr;
 }
 
+.controls-column {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+/* Explicit margin (not flex gap) so spacing works in older Safari and always reads as a clear gutter. */
+.controls-column > .panel--extras {
+  margin-top: 1rem;
+}
+
+.viewer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 0;
+}
+
 @media (min-width: 900px) {
   .layout {
     grid-template-columns: minmax(200px, 240px) minmax(0, 1fr) minmax(
@@ -65,12 +83,12 @@ body {
     align-items: start;
   }
 
-  .panel--controls {
+  .controls-column {
     grid-column: 1;
-    grid-row: 1;
+    grid-row: 1 / span 2;
   }
 
-  .panel--viewer {
+  .viewer-column {
     grid-column: 2;
     grid-row: 1 / span 2;
   }
@@ -82,6 +100,11 @@ body {
 
   .full-width {
     grid-column: 1 / -1;
+  }
+
+  .panel--extras {
+    max-height: min(55vh, 520px);
+    overflow: auto;
   }
 }
 
@@ -142,6 +165,56 @@ select {
 }
 
 .iframe-wrap iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.extras-heading {
+  margin-top: 1.25rem;
+}
+
+.random-facts {
+  margin: 0.35rem 0 0;
+  padding-left: 1.2rem;
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.random-facts li {
+  padding: 0.25rem 0;
+}
+
+.random-facts li::marker {
+  color: var(--accent);
+}
+
+.inline-code {
+  font-size: 0.85em;
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    monospace;
+}
+
+.youtube-shell {
+  margin-top: 0.35rem;
+}
+
+.youtube-embed {
+  position: relative;
+  width: 100%;
+  border-radius: calc(var(--radius) - 2px);
+  overflow: hidden;
+  background: #000;
+  aspect-ratio: 16 / 9;
+}
+
+.youtube-embed iframe {
   position: absolute;
   inset: 0;
   width: 100%;

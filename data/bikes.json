@@ -10,6 +10,11 @@
       "license": "CC Attribution-ShareAlike 4.0 International",
       "partsByInstanceId": {},
       "partsByMaterialId": {},
+      "randomFacts": [
+        "The underlying project was shared as an open mixed-reality / digital-twin reference (glTF sample)—handy if you care about 3D pipelines, not just the look of the render.",
+        "Carbon fiber frames are built from layered sheets in a mold; the layup pattern drives stiffness, comfort, and weight more than the silhouette alone.",
+        "Replace these bullets in JSON with your own trivia: pro palmares, design trivia, or why you picked this model for the gallery."
+      ],
       "partsGuide": [
         {
           "name": "Frame",
@@ -63,6 +68,12 @@
       "license": "See model page on Sketchfab",
       "partsByInstanceId": {},
       "partsByMaterialId": {},
+      "randomFacts": [
+        "The modern MTB drivetrain trend toward a single chainring (“1x”) trades front shifts for a wide-range cassette and a quieter, simpler cockpit.",
+        "Knobs and casing construction matter as much as tread pattern: small knobs roll faster on hardpack; tall spaced knobs bite in loose dirt.",
+        "Dropper posts became standard on trail bikes because being able to lower the saddle beats hanging off the back on steep descents.",
+        "Paste a YouTube URL in JSON when you find a great trail-tech explainer for this slot."
+      ],
       "partsGuide": [
         {
           "name": "Suspension fork",
@@ -104,6 +115,11 @@
       "license": "See model page on Sketchfab",
       "partsByInstanceId": {},
       "partsByMaterialId": {},
+      "randomFacts": [
+        "This Sketchfab scene is built for learning: the author added annotations for tubes you would measure on a real frame drawing.",
+        "Head-tube length and angle interact with fork offset to define how the bike handles at low and high speed.",
+        "Seat-tube angle changes where your knee sits over the pedal—small degrees matter for long rides and knee comfort."
+      ],
       "partsGuide": [
         {
           "name": "Head tube",
@@ -137,6 +153,13 @@
       "license": "See model page on Sketchfab",
       "partsByInstanceId": {},
       "partsByMaterialId": {},
+      "randomFacts": [
+        "The Madone line is Trek’s aero road platform—deep airfoil tube shaping trades a little weight for speed in the wind.",
+        "Disc brakes on aero bikes took years to normalize in the pro peloton; they’re now default for wet-weather confidence and rim heat isn’t an issue.",
+        "Integrated cockpits look clean and reduce drag, but they can complicate travel and stem swaps—something to know before you dream up your build.",
+        "Edit this list with team-bike stories or model-year notes that matter to you."
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=C1uQ8UtctMQ",
       "partsGuide": [
         {
           "name": "Head tube",
@@ -170,6 +193,13 @@
       "license": "See model page on Sketchfab",
       "partsByInstanceId": {},
       "partsByMaterialId": {},
+      "randomFacts": [
+        "The Y1Rs is Colnago’s aero-focused race platform—think low drag and integrated front ends rather than classic round tubes.",
+        "Tadej Pogačar has helped define the modern GC rider who wins climbs, time trials, and one-day races; his bike choices get dissected every season.",
+        "Rainbow accents usually nod to a world champion’s special paint—great gallery fodder even when the 3D file is fan art, not a team-issue frame.",
+        "Swap in your own lines here (e.g. a specific Monument, Grand Tour stage, or component choice) to match how you want to tell the story."
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=Bihl7m4XmOw",
       "partsGuide": [
         {
           "name": "Head tube",
@@ -203,6 +233,12 @@
       "license": "See model page on Sketchfab",
       "partsByInstanceId": {},
       "partsByMaterialId": {},
+      "randomFacts": [
+        "Time trial and triathlon bikes chase the lowest sustainable drag: tube shaping, hidden brakes, and deep wheels are all part of the package.",
+        "Scott’s Plasma family has spanned everything from entry carbon TT rigs to flagship WorldTour time trial machines.",
+        "Fit matters more than frame “speed”: if you can’t hold the position for your event length, the wind tunnel numbers don’t translate.",
+        "Add a youtubeUrl when you have a solid Plasma walkthrough or race clip you like."
+      ],
       "partsGuide": [
         {
           "name": "Head tube",

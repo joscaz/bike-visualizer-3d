@@ -12,6 +12,11 @@
   var partDetail = document.getElementById('part-detail');
   var partsGuide = document.getElementById('parts-guide');
   var creditsBlock = document.getElementById('credits-block');
+  var randomFactsList = document.getElementById('random-facts');
+  var randomFactsEmpty = document.getElementById('random-facts-empty');
+  var youtubeShell = document.getElementById('youtube-shell');
+  var youtubeIframe = document.getElementById('youtube-iframe');
+  var youtubeEmpty = document.getElementById('youtube-empty');
 
   var catalog = { bikes: [] };
   var currentBike = null;
@@ -29,6 +34,54 @@
 
   function setStatus(text) {
     viewerStatus.textContent = text;
+  }
+
+  function extractYoutubeVideoId(bike) {
+    if (!bike) return null;
+    if (bike.youtubeVideoId && typeof bike.youtubeVideoId === 'string') {
+      var idOnly = bike.youtubeVideoId.trim();
+      if (/^[\w-]{11}$/.test(idOnly)) return idOnly;
+    }
+    if (!bike.youtubeUrl || typeof bike.youtubeUrl !== 'string') return null;
+    var s = bike.youtubeUrl.trim();
+    if (/^[\w-]{11}$/.test(s)) return s;
+    var m = s.match(
+      /(?:youtube\.com\/watch\?v=|youtube\.com\/watch\?[^#]*&v=|youtu\.be\/|youtube\.com\/embed\/|youtube\.com\/shorts\/|m\.youtube\.com\/watch\?v=)([\w-]{11})/
+    );
+    return m ? m[1] : null;
+  }
+
+  function renderExtras(bike) {
+    var facts = bike.randomFacts || [];
+    randomFactsList.innerHTML = '';
+    if (facts.length) {
+      randomFactsEmpty.hidden = true;
+      randomFactsList.hidden = false;
+      for (var i = 0; i < facts.length; i++) {
+        var li = document.createElement('li');
+        li.textContent = facts[i];
+        randomFactsList.appendChild(li);
+      }
+    } else {
+      randomFactsEmpty.hidden = false;
+      randomFactsList.hidden = true;
+    }
+
+    var vid = extractYoutubeVideoId(bike);
+    if (vid) {
+      youtubeEmpty.hidden = true;
+      youtubeShell.hidden = false;
+      youtubeIframe.src =
+        'https://www.youtube-nocookie.com/embed/' +
+        vid +
+        '?rel=0&modestbranding=1';
+      youtubeIframe.title = 'YouTube: ' + (bike.title || 'this bike');
+    } else {
+      youtubeEmpty.hidden = false;
+      youtubeShell.hidden = true;
+      youtubeIframe.removeAttribute('src');
+      youtubeIframe.title = '';
+    }
   }
 
   function materialKey(material) {
@@ -179,6 +232,7 @@
     currentBike = bike;
     renderCredits(bike);
     renderPartsGuide(bike);
+    renderExtras(bike);
 
     var iframe = mountFreshIframe();
     currentApi = null;
